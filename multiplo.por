@@ -3,17 +3,24 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro primeiroValor
-		inteiro segundoValor
-		inteiro soma
 
-		escreva("Digite o primeiro valor : ")
-		leia(primeiroValor)
-		escreva("Digite o segundo valor : ")
-		leia(segundoValor)
-		soma = primeiroValor + segundoValor
-		escreva("a soma dos valores é "+soma)
-		
+		inteiro totalCinco=0
+		inteiro totalTres=0
+
+		para(inteiro x=1;x<=100; x++){
+						
+			se(x%3==0){
+				totalTres+=x
+			}
+			se(x%5==0){
+				escreva(x+"\n")
+				totalCinco=totalCinco+x
+			}
+			
+						
+		}
+		escreva("\nTotal dos multiplos de 5 : "+totalCinco)
+		escreva("\nTotal dos multiplos de 3 : "+totalTres)
 		
 	}
 }
@@ -22,9 +29,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 63; 
+ * @POSICAO-CURSOR = 354; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {primeiroValor, 6, 10, 13}-{segundoValor, 7, 10, 12}-{soma, 8, 10, 4};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

@@ -3,17 +3,24 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia nomeGringo
-		real temperaturaC
-		real temperaturaF
-
-		escreva("Gringo, qual o seu nome : ")
-		leia(nomeGringo)
-		escreva("Qual a temperatura em Celcius : ")
-		leia(temperaturaC)
-		temperaturaF = (temperaturaC * 9/5)+32
-		escreva("oi "+nomeGringo+" a temperatura em Farren é "+temperaturaF+"F")
 		
+ 	inteiro P=0
+ 	real M=0.00
+ 	inteiro E=0
+ 	const inteiro LIMITEKG = 60
+ 	const real VALORMULTA= 4.00
+
+	escreva("Informe os kg´s de tomate hoje : ")
+	leia(P)
+	se(P>LIMITEKG){
+		E = P - LIMITEKG
+		M = E * VALORMULTA	
+	}
+
+	escreva("Valor de P : "+P)
+	escreva("\nValor de E : "+E)
+	escreva("\nValor de M : "+M)
+	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 261; 
+ * @POSICAO-CURSOR = 5; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
